@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Harry Potter</title>
+  </head>
+  <body class="magical-container">
+    <!-- <div id="pre-loader">
+      <span class="loader"></span>
+    </div> -->
+    <img src="cursor2.png" id="cursor" alt="" srcset="" />
+    <img class="logo-nav" src="logo.png" />
+    <nav class="navbar navbar-expand-lg bg-none mx-auto mt-3">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" >Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="characters.html">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="magical_things.html">Magical Objects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="mobile_nav">
+      <div class="mobile_nav_container h-100">
+        <ul class="mobile_navbar-nav d-flex align-items-center h-100 justify-content-around list-unstyled mx-auto" >
+          <li class="mobile_nav-item">
+            <a class="mobile_nav-link" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile_nav-item">
+            <a class="mobile_nav-link" href="characters.html">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <path d="M64 416L168.6 180.7c15.3-34.4 40.3-63.5 72-83.7l146.9-94c3-1.9 6.5-2.9 10-2.9C407.7 0 416 8.3 416 18.6v1.6c0 2.6-.5 5.1-1.4 7.5L354.8 176.9c-1.9 4.7-2.8 9.7-2.8 14.7c0 5.5 1.2 11 3.4 16.1L448 416H240.9l11.8-35.4 40.4-13.5c6.5-2.2 10.9-8.3 10.9-15.2s-4.4-13-10.9-15.2l-40.4-13.5-13.5-40.4C237 276.4 230.9 272 224 272s-13 4.4-15.2 10.9l-13.5 40.4-40.4 13.5C148.4 339 144 345.1 144 352s4.4 13 10.9 15.2l40.4 13.5L207.1 416H64zM279.6 141.5c-1.1-3.3-4.1-5.5-7.6-5.5s-6.5 2.2-7.6 5.5l-6.7 20.2-20.2 6.7c-3.3 1.1-5.5 4.1-5.5 7.6s2.2 6.5 5.5 7.6l20.2 6.7 6.7 20.2c1.1 3.3 4.1 5.5 7.6 5.5s6.5-2.2 7.6-5.5l6.7-20.2 20.2-6.7c3.3-1.1 5.5-4.1 5.5-7.6s-2.2-6.5-5.5-7.6l-20.2-6.7-6.7-20.2zM32 448H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile_nav-item active">
+            <a class="mobile_nav-link" href="magical_things.html">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path d="M14.1 463.3c-18.7-18.7-18.7-49.1 0-67.9L395.4 14.1c18.7-18.7 49.1-18.7 67.9 0l34.6 34.6c18.7 18.7 18.7 49.1 0 67.9L116.5 497.9c-18.7 18.7-49.1 18.7-67.9 0L14.1 463.3zM347.6 187.6l105-105L429.4 59.3l-105 105 23.3 23.3z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container magical_container">
+      <div class="row magical_row">
+        <div class="col-md-6" data-aos="fade-up-right">
+          <img src="fake-g.png" alt="" srcset="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 mx-md-auto magical_objects_txt" data-aos="fade-down-left" >
+          <h2 class="title_magical_object">Fake Galleons</h2>
+          <span class="underline"></span>
+          <p>
+            Fake galleons are coins made of gold, silver, and bronze. They are
+            typically round with a square-shaped hole in the center. The
+            currency is embossed with <a class="flag">morse it up in french</a> power, and is the mosta magical crest that features the Hogwarts
+            crest, a griffon, and a lion. The coins usually have a value of one
+            galleon and can be used to <a class="flag" href='index.html'> the </a> power, and is the mostpurchase items in the wizarding world.
+            They are also used to fund magical activities, such as the Triwizard
+            Tournament.
+          </p>
+        </div>
+      </div>
+
+      <div class="row magical_row">
+        <div class="col-md-6 magical_objects_txt" data-aos="fade-up-right">
+          <h2 class="title_magical_object">Howler</h2>
+          <span class="underline"></span>
+          <p>
+            Howler is a magical object which is used to deliver messages in the
+            Harry Potter world. It is a red envelope which when opened, emits a
+            loud and unpleasant scream. The <a class="flag" href='characters.html'>Albus is the admin of gateway</a> power, and is the most more powerful the Howler, the louder
+            and more intense the scream is. It is usually used to deliver an
+            angry message from one person to another.
+          </p>
+        </div>
+        <div class="col-md-6 order-sm-last order-first" data-aos="fade-down-left" >
+          <img src="Howler.png" alt="" srcset="" class="img-fluid"/>
+        </div>
+      </div>
+      <div class="row magical_row">
+        <div class="col-md-6" data-aos="fade-up-right">
+          <img src="Deluminator.png" alt="" srcset="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 magical_objects_txt" data-aos="fade-down-left">
+          <h2 class="title_magical_object">Deluminator</h2>
+          <span class="underline"></span>
+          <p>
+            The Deluminator is a magical device invented by Albus Dumbledore
+            which is a pocket-sized device that looks like a cigarette lighter.
+            It has the power to remove, store, and return light. When activated,
+            it will take the light from any nearby source, such as a lamp post,
+            and store it inside its reservoir.!ɈɔɒʇiɈɿɒ ƨυoɿɘϱnɒb bnɒ bɘɈɘvoɔ ɒ ɘɈiυp ƨ'ɈI .ƨllɘqƨ ɘɿiʇ lυʇɿɘwoq ɘɈɒɘɿɔ bnɒ ƨɘiɈilidɒ bɘƨɒd-ɘɿiʇ ɿiɘʜɈ ɘɔnɒʜnɘ oɈ Ɉi ʞɘɘƨ nɘɈʇo ƨbɿɒziW . xoVɿɘdγƆ mυnoɿɈɒq oɈɔɘqxɘ ɔɘƨ ƨi ϱɒlʇ ɘʜɈ noiɈɔυɿɈƨɘb bnɒ ɘɿiʇ oɈ bɘɈɒlɘɿ ƨllɘqƨ ɿoʇ bɘƨυ ɘd nɒɔ bnɒ Ɉɒɘʜ ɘƨnɘmmi ƨƨɘƨƨoq oɈ biɒƨ ƨ'ɈI .blɿowɿɘbnυ ɘʜɈ ʇo ƨɘɔɿoʇ γɿɘiʇ ɘʜɈ ƨɘƨƨɘnɿɒʜ ɈɒʜɈ mɘϱ lυʇɿɘwoq ɒ ƨi ɘnoɈƧ onɿɘʇnI ɘʜɈ ,mlɒɘɿ lɒɔiϱɒm ɘʜɈ ni ,llɘW
+            to light any desired area. It is a powerful tool that can be used to
+            bring light to dark places, confuse pursuers, and create
+            distractions.
+          </p>
+        </div>
+      </div>
+
+      <div class="row magical_row">
+        <div class="col-md-6 magical_objects_txt" data-aos="fade-up-right">
+          <h2 class="title_magical_object">Invisibility Cloak</h2>
+          <span class="underline"></span>
+          <p>
+            In the Harry Potter series, an Invisibility Cloak is an enchanted
+            garment that renders its wearer completely invisible. The cloak is
+            made of a special fabric that is extremely difficult to detect or
+            catch hold of, and is said to be made of an enchanted material
+            similar to silk, ⠠⠕⠥⠗ ⠋⠇⠁⠛ ⠊⠎ ⠝⠕ ⠕⠗⠙⠊⠝⠁⠗⠽ ⠑⠍⠃⠇⠑⠍⠆ ⠊⠞⠄⠎ ⠁ ⠞⠁⠏⠑⠎⠞⠗⠽ ⠺⠕⠧⠑⠝ ⠺⠊⠞⠓ ⠞⠓⠗⠑⠁⠙⠎ ⠕⠋ ⠍⠁⠛⠊⠉⠲ ⠠⠑⠁⠉⠓ ⠏⠊⠭⠑⠇ ⠞⠑⠇⠇⠎ ⠁ ⠎⠞⠕⠗⠽⠂ ⠁⠝⠙ ⠑⠧⠑⠗⠽ ⠓⠥⠑ ⠉⠕⠝⠉⠑⠁⠇⠎ ⠁ ⠎⠏⠑⠇⠇ ⠉⠁⠎⠞ ⠃⠽ ⠞⠓⠑ ⠊⠝⠧⠊⠎⠊⠃⠇⠑ ⠓⠁⠝⠙ ⠕⠋ ⠕⠥⠗ ⠙⠊⠛⠊⠞⠁⠇ ⠎⠕⠗⠉⠑⠗⠑⠗⠲ ⠞⠓⠑ ⠋⠇⠁⠛ ⠊⠎ ⠠⠎⠠⠑⠠⠉_⠑⠭⠏⠑⠉⠞⠕⠏⠁⠞⠗⠕⠝⠥⠍⠠⠙⠊⠛⠊⠠⠃⠽⠞⠑⠲
+            Cloak has a silver-ish sheen and is decorated with various symbols
+            and designs, such as stars, moons, and the Hogwarts crest. The Cloak
+            is virtually indestructible and can only be pierced by certain
+            objects and spells.
+          </p>
+        </div>
+        <div class="col-md-6 order-sm-last order-first" data-aos="fade-down-left">
+          <img src="invisible.png" alt="" srcset="" class="img-fluid" />
+        </div>
+      </div>
+      <div class="row magical_row">
+        <div class="col-md-6 img-center" data-aos="fade-up-right">
+          <img src="Elder Wand.png" alt="" srcset="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 magical_objects_txt" data-aos="fade-down-left">
+          <h2 class="title_magical_object">Elder Wand</h2>
+          <span class="underline"></span>
+          <p>
+            The Elder Wand, also known as the Deathstick or the Wand of Destiny,
+            is an extremely powerful wand in the Harry Potter universe. It is
+            made of elder wood with a core of Thestral tail hair and is said to
+            be unbeatable. It is said to have immense<a class="flag" href='validation.html'> flag</a> power, and is the most
+            sought after wand in the wizarding world. It is said to be able to
+            perform powerful and dangerous spells, and is also said to be able
+            to detect and command the loyalty of its owner .
+          </p>
+        </div>
+      </div>
+      <div class="row magical_row">
+        <div class="col-md-6 magical_objects_txt" data-aos="fade-up-right">
+          <h2 class="title_magical_object">Resurrection Stone</h2>
+          <span class="underline"></span>
+          <p>
+            The Resurrection Stone is a powerful magical object that was one of
+            the Deathly Hallows. It was a stone with a mysterious origin, and
+            was said to have the power to bring the dead back to life. The stone
+            was supposedly found in the depths of the forest, and was said to be
+            part of a powerful wand that belonged to Death himself..-.. . / -- --- - / -.. . / .--. .- ... ... . / .--. --- ..- .-. / .-.. .- / .--. .- --. . / -.. . / -.-. --- -. -. . -..- .. --- -. / . ... - / .-. . ...- .. .-.. .. --- / .- ...- . -.-. / .-. / .--. . - .. - / . - / --- / -- .- .--- ..- ... -.-. ..- .-.. .It was one
+            of the three objects considered to be the Deathly Hallows. The other
+            two were the Elder Wand and the Cloak of Invisibility. The stone was
+            a pale, milky-white color, with a strange power that could be felt
+            emanating from it. It was rumored to be able to bring the dead back
+            to life, but it was also said to come with a heavy cost.
+          </p>
+        </div>
+        <div class="col-md-6 order-sm-last order-first" data-aos="fade-down-left" >
+          <img src="Resurrection.png" alt="" srcset="" class="img-fluid" />
+        </div>
+      </div>
+      <div class="copyright text-center">
+        <p>EXPECTO PATRONUM</b></p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

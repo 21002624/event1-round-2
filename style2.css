@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a131a;
+    color: #454445;
+}
+
+.sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #0a131a;
+    width: 100%;
+    height: 223px;
+}
+
+.contain-lamp {
+    position: relative;
+    margin: auto;
+    margin-top: 119px;
+    width: 450px;
+    height: 100px;
+}
+
+.lamp {
+    position: absolute;
+    z-index: 20;
+    background-color: #1c1c1c;
+    width: 10px;
+    height: 100px;
+}
+
+.base {
+    position: absolute;
+    top: 90px;
+    left: -8px;
+    background-color: #1c1c1c;
+    border-radius: 50% 50% 10% 10%;
+    width: 26px;
+    height: 15px;
+}
+
+.top-base {
+    position: absolute;
+    left: -16px;
+    top: -10px;
+    z-index: 20;
+    width: 0;
+    height: 0;
+    border-left: 21px solid transparent;
+    border-right: 21px solid transparent;
+    border-top: 21px solid #1c1c1c;
+}
+
+.light {
+    position: absolute;
+    top: -35px;
+    left: -15px;
+    z-index: 3px;
+    background-color: #4c4c4c;
+    border-radius: 5%;
+    width: 40px;
+    height: 25px;
+}
+
+.top-point {
+    position: absolute;
+    top: -55px;
+    left: -15px;
+    z-index: 20;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #1c1c1c;
+    width: 0;
+    height: 0;
+}
+
+.top-point:after {
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    z-index: 4;
+    display: block;
+    background-color: #1c1c1c;
+    width: 2px;
+    height: 25px;
+    content: '';
+}
+
+.top-point:before {
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    z-index: 4;
+    display: block;
+    background-color: #1c1c1c;
+    width: 2px;
+    height: 25px;
+    content: '';
+}
+
+.lamp-ball {
+    position: absolute;
+    top: -66px;
+    left: -2px;
+    z-index: 20;
+    border-radius: 50%;
+    background-color: #1c1c1c;
+    width: 14px;
+    height: 14px;
+}
+
+.top-base:after {
+    position: absolute;
+    left: -45px;
+    top: -90px;
+    z-index: 2;
+    display: block;
+    background-color: #4c4c4c;
+    border-radius: 50%;
+    opacity: 0;
+    background-image: -webkit-radial-gradient(50% 50%, circle, yellow, white);
+    border: 1px solid yellow;
+    background-image: -moz-radial-gradient(50% 50%, circle, yellow, white);
+    border: 1px solid yellow;
+    background-image: radial-gradient(50% 50%, circle, yellow, white);
+    border: 1px solid yellow;
+    -webkit-box-shadow: -6px -8px 10px yellow, -4px 7px 10px yellow, 6px -4px 10px yellow;
+    box-shadow: -6px -8px 10px yellow, -4px 7px 10px yellow, 6px -4px 10px yellow;
+    width: 90px;
+    height: 90px;
+    content: '';
+}
+
+.lamp-2 {
+    margin-left: 150px;
+}
+
+.lamp-3 {
+    margin-left: 300px;
+}
+
+.lamp-4 {
+    margin-left: 450px;
+}
+
+.ground {
+    position: relative;
+    margin-top: 5px;
+    background-color: #0a131a;
+    width: 100%;
+    height: 800px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    z-index: 30;
+    margin-left: -41px;
+    border-radius: 50px;
+    background-color: #4c4c4c;
+    width: 90px;
+    height: 38px;
+    cursor: pointer;
+}
+
+label:after {
+    margin-left: 4px;
+    margin-top: 4px;
+    display: block;
+    background-color: #0a131a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    content: '';
+}
+
+input:checked~.sky {
+    -webkit-animation: brightness 5s forwards;
+    animation: brightness 5s forwards;
+}
+
+input:checked~.contain-lamp .light {
+    -webkit-animation: light 6s forwards;
+    animation: light 6s forwards;
+}
+
+input:checked~.contain-lamp .top-base:after {
+    -webkit-animation: glare 9s forwards;
+    animation: glare 9s forwards;
+}
+
+input:checked+label:after {
+    margin-left: 56px;
+}
+
+input:checked+label {
+    -webkit-animation: color-on 1s forwards;
+    animation: color-on 1s forwards;
+}
+
+@-webkit-keyframes light {
+    to {
+        background-color: #f2e415;
+    }
+}
+
+@-webkit-keyframes glare {
+    to {
+        opacity: 0.1;
+    }
+}
+
+@-webkit-keyframes brightness {
+    to {
+        background-color: #172c3a;
+    }
+}
+
+@-webkit-keyframes color-on {
+    to {
+        background-color: #e5da5a;
+    }
+}
+
+@keyframes light {
+    to {
+        background-color: #f2e415;
+    }
+}
+
+@keyframes glare {
+    to {
+        opacity: 0.1;
+    }
+}
+
+@keyframes brightness {
+    to {
+        background-color: #172c3a;
+    }
+}
+
+@keyframes color-on {
+    to {
+        background-color: #e5da5a;
+    }
+}

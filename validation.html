@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FINAL KEY</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        
+    </head>
+    <body class="body">
+        <form class="form-container" onsubmit="return validate()">
+            <h3>FINAL KEY</h3>
+            <div class="form-grp">
+                <label for="username">MYSTICAL SCHOLAR</label><br>
+                <input type="text" name="username" placeholder="Username" id="user">
+                <i class="fa fa-times u_times"></i>
+                <i class="fa fa-check u_check"></i>
+            </div>
+            <p id="error"></p>
+            <div class="form-grp">
+                <label for="password">Password</label><br>
+                <input type="password" name="password" placeholder="Password" id="pass">
+                <i class="fa fa-times p_times"></i> 
+                <i class="fa fa-check p_check"></i>
+            </div>
+            <p id="error"></p>
+            <div class="form-grp">
+                <input type="submit" name="login-btn" value="Login">
+            </div>
+        </form>
+        <script type="text/javascript" src="login.js"></script>
+    </body>
+</html>
